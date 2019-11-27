@@ -4,7 +4,7 @@ using System.Text;
 
 namespace PlantillaPruebasDeConcepto.Domain.Entities
 {
-    public class Person: BaseEntity
+    public class Person: EntityBase
     {
         public string Name { get; set; }
         public string LastName { get; set; }

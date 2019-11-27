@@ -19,7 +19,7 @@ namespace PlantillaPruebasDeConcepto.Infrastructure.Repositories
         }
 
 
-        public IRepository<T> GetRepository<T>() where T : BaseEntity
+        public IRepository<T> GetRepository<T>() where T : EntityBase
         {
             var key = typeof(T).Name;
 

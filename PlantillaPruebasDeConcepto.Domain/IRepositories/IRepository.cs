@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace PlantillaPruebasDeConcepto.Domain.IRepositories
 {
-    public interface IRepository<E> where E : BaseEntity
+    public interface IRepository<E> where E : EntityBase
     {
         Task<IEnumerable<E>> GetAsync(Expression<Func<E, bool>> filter = null,
                Func<IQueryable<E>, IOrderedQueryable<E>> orderBy = null,

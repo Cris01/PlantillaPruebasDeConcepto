@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace PlantillaPruebasDeConcepto.Infrastructure.Repositories
 {
-    public class Repository<E> : IRepository<E> where E : BaseEntity
+    public class Repository<E> : IRepository<E> where E : EntityBase
     {
         private readonly MyOwnContext _Context;
         private readonly DbSet<E> _Set;
